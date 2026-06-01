@@ -1,0 +1,111 @@
+@extends('Layout.master')
+    @section('content')
+        <div class="container mt-3">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            create profile
+                        </div>
+                        <div class="card-body">
+                            <form method="POST" action="{{route('storeProfile')}}">
+                                @csrf
+                                
+                                <div class="row pb-2">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="firstname" class="pb-1">firstname</label>
+                                            <input type="text" name="firstname" id="firstname" class="form-control" value="{{old('firstname')}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="lastname" class="pb-1">lastname</label>
+                                            <input type="text" name="lastname" id="lastname" class="form-control" value="{{old('lastname')}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row pb-2">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="username" class="pb-1">username</label>
+                                            <input type="text" name="username" id="username" class="form-control" value="{{old('username')}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="phone" class="pb-1">phone</label>
+                                            <input type="text" name="phone" id="phone" class="form-control" value="{{old('phone')}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row pb-2">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="email" class="pb-1">email</label>
+                                            <input type="email" name="email" id="email" class="form-control" value="{{old('email')}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="role" class="pb-1">role</label>
+                                            <input type="text" name="role" id="role" class="form-control" value="{{old('role')}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row pb-2">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="date_of_birth" class="pb-1">date of birth</label>
+                                            <input type="date" name="date_of_birth" id="date_of_birth" class="form-control" value="{{old('date_of_birth')}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="gender" class="pb-1">gender</label>
+                                            <select name="gender" id="gender" class="form-select">
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                            </select>
+                                            {{-- <input type="text" name="gender" id="gender" class="form-control" value="{{old(gender)}}"> --}}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row pb-2">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="religion" class="pb-1">religion</label>
+                                            <input type="text" name="religion" id="religion" class="form-control" value="{{old('religion')}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="nationality" class="pb-1">nationality</label>
+                                            <input type="text" name="nationality" id="nationality" class="form-control" value="{{old('nationality')}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="county" class="pb-1">county</label>
+                                    <input type="text" name="county" id="county" class="form-control" value="{{old('county')}}">
+                                </div>
+
+                                <div class="form-group text-center">
+                                    <input type="submit" name="submit" value="submit" class="btn btn-primary btn-sm mr-5 mt-2">
+                                </div>
+
+                                {{-- <div class="form-group text-center mt-2">
+                                    <input type="submit" class="btn btn-primary btn-sm" value="submit">
+                                </div> --}}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endsection
