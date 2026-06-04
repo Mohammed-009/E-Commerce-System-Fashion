@@ -1,14 +1,21 @@
 @extends('Layout.app')
+    @section('title', 'About Us | Fashion Store Kenya')
+
+	@section('description', 'Learn more about Fashion Store Kenya, our mission, values and commitment to providing quality clothing, official wear, lifestyle 			outfits and shoes for men, women and children.')
+
+	@section('keywords', 'about fashion store kenya, clothing store, fashion business kenya, official wear, lifestyle wear, shoes kenya')
     @section('content')
         <div class="container-fluid mt-5">
 {{-- ############################################ about section ################################### --}}
             <section class="text-center bg-light">
                     <!-- Jumbotron -->
                     <div class="row justify-content-center bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white" style="background-image: url({{url('images/men-fashion.jpg')}});">
-                        <h1 class="mb-3">About us</h1>
-                        <p>
-                            Our mission is to provide high-quality products and exceptional service.
-                        </p>
+                        <h1 class="mb-3">About Us</h1>
+    						<p class="lead text-center mx-auto w-75">
+    							Our mission is to provide high-quality fashion clothing, official wear,
+    							lifestyle outfits and footwear while delivering exceptional customer service
+    							and a seamless shopping experience.
+							</p>
                     </div>
                     <!-- Jumbotron -->
             </section>
@@ -25,7 +32,7 @@
                             </p>
                         </div>
                         <div class="col-12 col-lg-6 justify-content-center about-image">
-                            <img src="{{asset('images/men-fashion.jpg')}}" class="img-fluid rounded-3" alt="about-img">
+                            <img src="{{asset('images/men-fashion.jpg')}}" class="img-fluid rounded-3" alt="Fashion Store Kenya team and clothing collection">
                         </div>
                     </div>
                 </div>
@@ -35,7 +42,7 @@
                 <div class="container py-5">
                     <div class="row justify-content-center">
                         <div class="col-12 col-lg-6 justify-content-center about-image">
-                            <img src="{{asset('images/men-fashion.jpg')}}" class="img-fluid rounded-3" alt="about-img">
+                            <img src="{{asset('images/men-fashion.jpg')}}" class="img-fluid rounded-3" alt="Quality fashion clothing and footwear">
                         </div>
                         <div class="col-12 col-lg-6">
                             <h3 class="mb-2 pt-4">Our Values</h3>
@@ -55,7 +62,7 @@
                     <div class="row justify-content-center">
                         <div class="col-12 col-lg-4">
                             <div class="d-sm-flex justify-content-center align-items-center witness">
-                                <img src="{{asset('images/category1.jpeg')}}" class="rounded-circle me-2">
+                                <img src="{{asset('images/category1.jpeg')}}" class="rounded-circle me-2" alt="Company CEO">
                                 <div class="fw-bold mb-3">
                                     Mohammed
                                     <span class="text-primary mx-1">/</span>
@@ -65,7 +72,7 @@
                         </div>
                             <div class="col-12 col-lg-4">
                                 <div class="d-sm-flex justify-content-center align-items-center witness">
-                                    <img src="{{asset('images/category1.jpeg')}}" class="rounded-circle me-2">
+                                    <img src="{{asset('images/category1.jpeg')}}" class="rounded-circle me-2" alt="Company CEO">
                                     <div class="fw-bold mb-3">
                                         Mohammed
                                         <span class="text-primary mx-1">/</span>
@@ -75,7 +82,7 @@
                             </div>
                                 <div class="col-12 col-lg-4">
                                     <div class="d-sm-flex justify-content-center align-items-center witness">
-                                        <img src="{{asset('images/category1.jpeg')}}" class="rounded-circle me-2">
+                                        <img src="{{asset('images/category1.jpeg')}}" class="rounded-circle me-2" alt="Company CEO">
                                         <div class="fw-bold mb-3">
                                             Mohammed
                                             <span class="text-primary mx-1">/</span>
@@ -96,7 +103,7 @@
                       <div class="col-lg-3 col-md-3">
                         <h6 class="text-uppercase mb-3 font-weight-bold text-warning">Company</h6>
                         <p>
-                          This ia s simple description of the business which includes the types of products present and means of payments, and delivery. All customers are fairly served with good customer services from capable staff
+                            Fashion Store Kenya offers quality clothing, official wear, lifestyle outfits and shoes for men, women and children. We are committed to providing affordable fashion, secure shopping and excellent customer service.
                         </p>
                       </div>
                       {{--  --}}
