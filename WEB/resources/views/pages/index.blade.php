@@ -1,4 +1,9 @@
 @extends('Layout.app')
+@section('title', 'Fashion Store Kenya | Men, Women & Kids Clothing, Shoes and Lifestyle Wear')
+
+@section('description', 'Shop quality fashion clothing, official wear, lifestyle outfits and shoes for men, women and children. Affordable prices and stylish collections.')
+
+@section('keywords', 'fashion kenya, men clothing, women clothing, children clothing, shoes kenya, lifestyle wear, official wear, fashion store')
     @section('content')
         <div class="container-fluid">
           {{-- <section>
@@ -158,7 +163,7 @@
                       </div>
                       <div class="col-md-8">
                         <div class="card-body card-hover">
-                          <a href="{{route('showMenOfficial')}}" class="link"><h5 class="card-title">Men officials</h5></a>
+                          <a href="{{route('showMenOfficial')}}" class="link"><h5 class="card-title">Men Officials Wear</h5></a>
                         </div>
                       </div>
                     </div>
@@ -174,7 +179,7 @@
                     </div>
                     <div class="col-md-8">
                       <div class="card-body card-hover">
-                        <a href="{{route('showWomenOfficial')}}" class="link"><h5 class="card-title">Women officials</h5></a>
+                        <a href="{{route('showWomenOfficial')}}" class="link"><h5 class="card-title">Women Officials Wear</h5></a>
                       </div>
                     </div>
                   </div>
@@ -190,7 +195,7 @@
                     </div>
                     <div class="col-md-8">
                       <div class="card-body card-hover">
-                        <a href="{{route('showChildrenOfficial')}}" class="link"><h5 class="card-title">Children officials</h5></a>
+                        <a href="{{route('showChildrenOfficial')}}" class="link"><h5 class="card-title">Children Officials Wear</h5></a>
                       </div>
                     </div>
                   </div>
@@ -308,7 +313,7 @@
                     <div class="col-lg-3 col-md-3">
                       <h6 class="text-uppercase mb-3 font-weight-bold text-warning">Company</h6>
                       <p>
-                        This ia s simple description of the business which includes the types of products present and means of payments, and delivery. All customers are fairly served with good customer services from capable staff
+                          Fashion Store Kenya offers quality clothing, official wear, lifestyle outfits and shoes for men, women and children. We are committed to providing affordable fashion, secure shopping and excellent customer service.
                       </p>
                     </div>
                     {{--  --}}
