@@ -1,11 +1,23 @@
 @extends('Layout.app')
+    @section('title', 'Contact Us | Fashion Store Kenya')
+
+	@section('description', 'Contact Fashion Store Kenya for inquiries about clothing, shoes, official wear, lifestyle outfits, orders, delivery and customer 			support.')
+
+	@section('keywords', 'contact fashion store kenya, customer support, clothing store contact, fashion kenya, shoes kenya')
     @section('content')
         <div class="container-fluid mt-5">
 {{-- ############################################ contact section ################################### --}}
             <section class="py-3">
                 <div class="container mb-5 pt-3 text-center justify-content-center">
-                  <h2 class="text-capitalize fw-bold py-2">Contact us</h2>
-                  <p class="pb-2">Contact us using the form below or via the following methods</p>
+                  <h1 class="text-capitalize fw-bold py-2">Contact Us</h1>
+                      	<div class="row justify-content-center">
+    					    <div class="col-lg-8 col-md-10">
+        					<p class="lead text-center">
+            					Our mission is to provide high-quality fashion clothing, official wear,
+            					lifestyle outfits and footwear while delivering exceptional customer service and a seamless shopping experience.
+        					</p>
+    					</div>
+					</div>
                 </div>
                 <div class="container py-3">
                   <div class="row justify-content-center">
@@ -52,7 +64,7 @@
                             </div>
                             <div class="form-group">
                               <label for="message">Message</label>
-                              <textarea name="message" id="message" cols="8" rows="5" class="form-control" value="{{ old('message')}}"></textarea>
+                              <textarea name="message" id="message" cols="8" rows="5" class="form-control">{{ old('message') }}</textarea>
                             </div>
                             <div class="form-group text-center">
                               <button type="submit" class="btn btn-primary btn-sm mt-3">submit</button>
@@ -67,10 +79,14 @@
                         <div class="card-body">
                           <div>
                             <p class="lead py-2">
-                              <i class="bi bi-envelope pr-2 text-warning"></i><span>mohammedtsuma014@gmail.com</span>
+                              <i class="bi bi-envelope pr-2 text-warning"></i>
+                                 <a href="mailto:mohammedtsuma014@gmail.com" class="text-decoration-none">mohammedtsuma014@gmail.com</a>
+                                <!-- <span>mohammedtsuma014@gmail.com</span> -->
                             </p>
                             <p class="lead pb-2">
-                              <i class="bi bi-telephone pr-2 text-success"></i><span>+254704895174</span>
+                              <i class="bi bi-telephone pr-2 text-success"></i>
+                                <a href="tel:+254704895174" class="text-decoration-none">+254 704 895 174</a>
+                                <!-- <span>+254704895174</span> -->
                             </p>
                             <p class="lead pb-2">
                               <i class="bi bi-clock pr-2 text-primary"></i><span>Mon-Fri, 8:00am-5:00pm</span>
@@ -94,7 +110,7 @@
                       <div class="col-lg-3 col-md-3">
                         <h6 class="text-uppercase mb-3 font-weight-bold text-warning">Company</h6>
                         <p>
-                          This ia s simple description of the business which includes the types of products present and means of payments, and delivery. All customers are fairly served with good customer services from capable staff
+                            Fashion Store Kenya offers quality clothing, official wear, lifestyle outfits and shoes for men, women and children. We are committed to providing affordable fashion, secure shopping and excellent customer service.
                         </p>
                       </div>
                       {{--  --}}
