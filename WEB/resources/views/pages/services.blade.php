@@ -1,10 +1,21 @@
 @extends('Layout.app')
+    @section('title', 'Our Services | Fashion Store Kenya')
+
+	@section('description', 'Explore our fashion services including fast shipping, secure checkout, easy returns and 24/7 customer support for clothing, footwear 		and lifestyle products.')
+
+    @section('keywords', 'fashion services kenya, fast shipping, secure checkout, online shopping kenya, clothing store services, footwear delivery')
     @section('content')
         <div class="container-fluid mt-5">
             <section class="py-3">
                 <div class="container text-center pt-3 mb-5 justify-content-center">
-                    <h2 class="text-capitalize py-2 fw-bold">Services</h2>
-                    <p class="pb-2">We offer a wide range of ecommerce services to meet your needs</p>
+                    <h1 class="text-capitalize py-2 fw-bold">Our Services</h1>
+                       	<div class="row justify-content-center">
+    					    <div class="col-lg-8 col-md-10">
+        					<p class="lead text-center">
+ 								We provide reliable ecommerce services including fast delivery, secure online payments, easy returns and dedicated customer support 								for all fashion and footwear purchases.
+        					</p>
+    					</div>
+					</div>
                 </div>
                 <div class="container py-3">
                     <div class="row justify-content-center mb-5">
@@ -14,7 +25,7 @@
                                     <div class="mb-3">
                                         <i class="bi bi-rocket-takeoff-fill fs-1 text-warning"></i>
                                     </div>
-                                    <h4 class="fw-bold text-capitalize">Fast shipping</h4>
+                                    <h4 class="fw-bold text-capitalize">Fast Shipping</h4>
                                     <p class="lead">Quick and reliable <br> shipping on all orders</p>
                                 </div>
                             </div>
@@ -51,7 +62,7 @@
                                         <i class="bi bi-question-circle fs-1 text-warning"></i>
                                     </div>
                                     <h4 class="fw-bold text-capitalize">24/7 Support</h4>
-                                    <p class="lead">Customer supportbr <br> available at anytime</p>
+                                     <p class="lead">Customer support <br> available whenever you need assistance</p>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +80,7 @@
                       <div class="col-lg-3 col-md-3">
                         <h6 class="text-uppercase mb-3 font-weight-bold text-warning">Company</h6>
                         <p>
-                          This ia s simple description of the business which includes the types of products present and means of payments, and delivery. All customers are fairly served with good customer services from capable staff
+                            Fashion Store Kenya offers quality clothing, official wear, lifestyle outfits and shoes for men, women and children. We are committed to providing affordable fashion, secure shopping and excellent customer service.
                         </p>
                       </div>
                       {{--  --}}
