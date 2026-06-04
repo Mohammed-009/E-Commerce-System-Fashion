@@ -4,10 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta name="google-site-verification" content="UGIBsBig0UExM_VxkIFaYyp3lRr7oVEGrk90YrIemjc" />
+    
+    <title>@yield('title', 'Fashion Store | Men, Women, Kids Clothing & Shoes')</title>
+
+	<meta name="description" content="@yield('description', 'Shop quality fashion clothing, official wear, lifestyle outfits, shoes and accessories for men, women 		and children.')">
+
+	<meta name="keywords" content="@yield('keywords', 'fashion store, official clothes, lifestyle wear, shoes, men clothing, women clothing, kids clothing, fashion 	kenya')">
+
+	<meta name="author" content="Fashion Store">
+
+	<meta name="robots" content="index, follow">
+
+	<link rel="canonical" href="{{ url()->current() }}">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="@yield('title', 'Fashion Store | Men, Women, Kids Clothing & Shoes')">
+
+	<meta property="og:description" content="@yield('description', 'Shop quality fashion clothing, official wear, lifestyle outfits, shoes and accessories for men, 	women and children.')">
+
+	<meta property="og:url" content="{{ url()->current() }}">
+
+	<meta property="og:type" content="website">
+
+	<meta property="og:image" content="{{ asset('images/logo.png') }}">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+
+	<meta name="twitter:title" content="@yield('title', 'Fashion Store | Men, Women, Kids Clothing & Shoes')">
+
+	<meta name="twitter:description" content="@yield('description', 'Shop quality fashion clothing, official wear, lifestyle outfits, shoes and accessories for men, 		women and children.')">
+
+	<meta name="twitter:image" content="{{ asset('images/logo.png') }}">
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- <title>{{ config('app.name', 'Laravel') }}</title> -->
 
             <!--STYLES-->
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
@@ -41,6 +78,17 @@
 
     <!-- Scripts -->
     {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
+
+            <script type="application/ld+json">
+		{
+  		"@context":"https://schema.org",
+  		"@type":"Store",
+  		"name":"Fashion Store",
+  		"url":"{{ url('/') }}",
+  		"logo":"{{ asset('images/logo.png') }}",
+  		"description":"Fashion clothing, official wear, lifestyle outfits and shoes for men, women and children."
+		}
+	</script>
 </head>
 <body>
     <div id="app">
