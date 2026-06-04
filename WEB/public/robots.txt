@@ -1,2 +1,13 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Block admin panel
+Disallow: /admin
+Disallow: /dashboard
+
+# Block sensitive routes (adjust if needed)
+Disallow: /login
+Disallow: /register
+
+# Sitemap location
+Sitemap: https://ecom-site.free.nf/sitemap.xml
